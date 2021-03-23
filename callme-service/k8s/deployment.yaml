@@ -15,7 +15,7 @@ spec:
         version: v1
     spec:
       containers:
-        - name: callme-service
+        - name: callme-service1
           image: gcr.io/mytest1-305713/callme-service
           imagePullPolicy: IfNotPresent
           ports:
@@ -53,7 +53,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: callme-service
+  name: callme-service-name
   labels:
     app: callme-service
 spec:
